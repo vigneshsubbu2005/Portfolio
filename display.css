@@ -1,0 +1,22 @@
+.one{
+    background-color: rgb(176, 127, 255);
+        height: 200px;
+        width: 300px;
+        margin: 0px;        
+}
+.two{
+    background-color: rgb(255, 127, 187);
+        height: 200px;
+        width: 300px;
+        
+}
+.three{
+    background-color: rgb(189, 255, 127);
+        height: 200px;
+        width: 300px;
+}
+.four{
+    background-color: rgb(255, 157, 127);
+        height: 200px;
+        width: 300px;
+}

@@ -1,0 +1,8 @@
+.boxmodel
+{
+    background-color: aquamarine;
+    margin: 100px;
+    height: 10%;
+    border: 10px solid rgb(102, 72, 72);
+    padding: 100px;
+}
