@@ -449,7 +449,7 @@ nav ul li a:hover:after{
     .fas-fa-times{
         padding-top: -20px;
         margin-top: -35px;
-        margin-left: -30px;
+        margin-left: -20px;
         display: block;
         font-size: 25px;
     }
@@ -496,7 +496,7 @@ nav ul li a:hover:after{
         flex-basis: 100%;
     }
     .header-text{
-        padding-top: 20%;
+        padding-top: 40%;
     }
     #about{
         height:100%;
@@ -510,6 +510,6 @@ nav ul li a:hover:after{
     #logo{
         margin-top: 10px;
         font-size: 190%;
-        margin-left: 80%;
+        margin-left: 77%;
     }
   }
