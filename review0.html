@@ -6,12 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="review0.css">
     <style>
-        .logo{
-            height: 100px;
+        
+        .tab-links{
+            color:#f1c40f;
+            text-decoration:underline;
+        }
+        .logo1{
+            font-family:Edwardian Script ITC;
+            font-weight:600;
+            font-size: 40px;
+            margin-left: -8%;
+            margin-top:2px;
+            color:#ff004f;
+            background-color: rgb(228, 218, 218);
             width: 100px;
-            border-radius: 50px;
-            margin-left: 80px;
-            size: 10pc;
+            border-radius: 20px;
+            
+        }
+        .img{
+            height: 350px;
         }
     </style>
 </head>
@@ -19,21 +32,27 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="reviow0logo.png" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#about">Skills</a></li>
-                    <li><a href="vickyresume.pdf">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <!-- <img src="reviow0logo.png" class="logo"> -->
+                <h2 class="logo1">KV</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header" class="home">Home</a></li>
+                    <li><a href="#about" class="about">About</a></li>
+                    <li><a href="#skill" class="skill">Skills</a></li>
+                    <li><a href="#projects" class="project">Projects</a></li>
+                    <li><a href="#portfolio" class="project">Portfolio</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                    <li><a href="Vigneshresume.jpg" class="btn btn2">View My CV</a></li>
+                    <i class="fas-fa-bars" onclick="closemenu()"></i>
                 </ul>
             </nav>
+            <i class="fas-fa-times" onclick="openmenu()"></i>
             <div class="header-text">
-                <p>Web Designer</p>
-                <h1>Hi, I'm <span>Vignesh</span><br>From Thiruvengadam</h1>
+                <p style="color: aqua;">Web Designer</p>
+                <h1>Hi, I'm <span>Vignesh Kannan</span><br>From Thiruvengadam</h1>
             </div>
         </div>
     </div>
+
     <!-- ------about---- -->
     <div id="about">
         <div class="container">
@@ -42,22 +61,112 @@
                     <img src="portfolioabout.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p class="para">
                         A current engineering student seeking opportunities in a dynamic and challenging environment that fosters continuous improvement and learning. Motivated to contribute to organisation growth and personal development
                         within the engineering industry. Major in electronics and communication engineering and have been actively involved in various projects and activities that enhance my knowledge and skills in this field. I enjoy learning about new technologies
                         and applying them in practical scenarios.
                     </p>
                     <div class="tap-titles">
-                        <p class="tab-links active-links">Skills</p>
+                        <p id="skill" class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
                     </div>
-                        <div class="tab-contents active-tab" id="education">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>Languages</span><br>c++, java, HTML, CSS, DSA</li>
                                 <li><span>Hardware</span><br>Arduino, Raspberry, Esp32</li>
-                                <li><span>Web development</span><br>Web app development</li>
+                                <li><span>Technical</span><br>Embedded Systems, Iot, Circuit Design</li>
                             </ul>
                         </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>GHSS</span><br>Secondary : 72.8%</li>
+                                <li><span>GHSS</span><br>Higher Secondary : 83.0%</li>
+                                <li><span>SKCET</span><br>CGPA : 7.59(till 3rd  sem)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>NPTEL</span><br>Ethics in Engineering, Stress Management</li>
+                                <li><span>Infosys SpringBoard</span><br>c++, java, HTML, CSS, DSA</li>
+                                <li><span>UiPath</span><br>UiPath Studio Family - Learnathon India 2023</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------project----------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa6-solid--diagram-project"></i>
+                        <h2>Obstacles Avoiding Rover</h2>
+                        <p>The rover should utilize sensors to detect obstacles 
+                            in its path and make real-time decisions to navigate around them, ensuring
+                            a safe and efficient traversal of the course.
+                        </p>
+                        <a href="https://www.instructables.com/Obstacle-Avoiding-Robot-Arduino-1/">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="clarity--cloud-network-line"></i>
+                        <h2>Embedded Systems</h2>
+                        <p>Embedded systems are specialized computing units within larger systems, 
+                            crucial in applications like consumer electronics and industrial automation. 
+                            Their architecture and future trends involving AI and IoT.
+                        </p>
+                        <a href="https://www.tutorialspoint.com/embedded_systems/es_overview.htm">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="gis--network"></i>
+                        <h2>Wireless Networks</h2>
+                        <p>Wireless networks enable communication without physical connections, crucial for modern connectivity. 
+                           This paper explores their architecture, protocols, and advancements, including the impact of 5G and future technologies.
+                        </p>
+                        <a href="https://www.tutorialspoint.com/wireless-networks">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----portfolio--- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Initiatives</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="r0work1.jpg" class="img">
+                            <div class="layer">
+                                <h3>Rover</h3>
+                                <p>The rover should utilize sensors to detect obstacles 
+                                    in its path and make real-time decisions
+                                </p>
+                                <a href="https://www.instructables.com/Obstacle-Avoiding-Robot-Arduino-1/"><i class="dashicons--admin-network"></i></a>
+                            </div>    
+                    </div>
+                    <div class="work">
+                        <img src="r0work2.jpg" class="img">
+                        <div class="layer">
+                            <h3>Embedded Systems</h3>
+                            <p>Embedded systems are specialized computing units within larger systems
+                            </p>
+                            <a href="https://www.tutorialspoint.com/wireless-networks"><i class="dashicons--admin-network"></i></a>
+                        </div> 
+                    </div>
+                    <div class="work">
+                        <img src="r0work3.jpg" class="img">
+                        <div class="layer">
+                            <h3>Wireless networks</h3>
+                            <p>Wireless networks enable communication without physical connections,
+                                 crucial for modern connectivity. 
+                            </p>
+                            <a href="https://www.tutorialspoint.com/wireless-networks"><i class="dashicons--admin-network"></i></a>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,15 +176,15 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="streamline-emojis--e-mail-2"></i>vigneshsubbu2005@gmail.com</p>
+                    <p><i class="fluent--mail-32-light"></i><nbsp>vigneshsubbu2005@gmail.com</nbsp></p>
                     <p><i class="marketeq--phone"></i>+91 7010373910</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/share/vv7bjRvs5JuMvFyM/?mibextid=qi2Omg"><i class="logos--facebook"></i></a> 
                         <a href="https://www.instagram.com/vignesh__viswa1301_?igsh=MzNlNGNkZWQ4Mg=="><i class="skill-icons--instagram"></i></a>
-                        <a href="https://github.com/vigneshsubbu2005"><i class="devicon--github"></i></a>
+                        <a href="https://github.com/vigneshsubbu2005"><i class="openmoji--github"></i></a>
                         <a href="https://www.linkedin.com/in/vignesh-k-760608258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="logos--linkedin-icon"></i></a>
                     </div>
-                    <a href="vickyresume.pdf" class="btn btn2">Download CV</a>
+                    
                 </div>
                 <div class="contact-right">
                 <form>
@@ -91,5 +200,36 @@
             <p>Copyright @ vignesh.</p>
         </div>
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemeu.style.right=("0");
+        }
+        function closemenu()
+        {
+            sidemeu.style.right=("-200px");
+        }
+
+    </script>
 </body>
 </html>
