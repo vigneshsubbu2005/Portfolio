@@ -473,10 +473,12 @@ nav ul li a:hover:after{
         top: 25px;
         left: 2px;
         cursor: pointer;
+       
     }
     .sub-title{
         font-size: 40px;
     }
+
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
@@ -492,6 +494,22 @@ nav ul li a:hover:after{
     .contact-right{
         margin-top: -30px;
         flex-basis: 100%;
-        
+    }
+    .header-text{
+        padding-top: 20%;
+    }
+    #about{
+        height:100%;
+        background-image: url(aboutimages.jpg);
+        background-size:5000pc;
+        background-position: center;
+    }
+    .copyright{
+        display: none;
+    }
+    #logo{
+        margin-top: 10px;
+        font-size: 190%;
+        margin-left: 80%;
     }
   }
